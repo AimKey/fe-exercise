@@ -19,6 +19,12 @@ a {
     padding-bottom: 132px;
     background-color: #f0f2f5;
 }
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 246px;
+    background-color: #f0f2f5;
+}
 .account {
     display: flex;
     flex-direction: column;
@@ -54,14 +60,14 @@ a {
     display: flex;
     justify-content: flex-start;
     gap: 18px;
+    
 }
 
 .card:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 4px 10px 5px rgba(24, 23, 23, 0.1);
     transition: all 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 4px 10px 5px rgba(24, 23, 23, 0.1);
     cursor: pointer;
 }
-
 
 
 .card {
@@ -285,8 +291,8 @@ a {
     text-decoration: none;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    justify-content:flex-start;
     gap: 10px;
     font-size: 12px;
     color: #737373;
@@ -321,12 +327,19 @@ a {
 }
 
 .misc__items {
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 20px;
 }
 
 .container {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
-    
+}
+
+.footer__logo p {
+    padding-top: 30px;
+    font-size: 11px;
 }
