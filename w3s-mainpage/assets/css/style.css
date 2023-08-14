@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-gray: #282a35;
+    --gray: #1d2a35;
+    --blue-black: #0d1721;
+    --white: #dddd;
+    --pink: #ffc0c7;
+    --green: #04aa6d;
+    --purple: #9763f6;
+    --yellow: #fff4a3;
+    --cyan: #96d4d4;
+    --light-green: #d9eee1;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+}
+
+.header__text {
+    font-size: 16px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    color: #ffff;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 0 0 1px #424c54;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.header__links {
+    display: flex;
+    list-style-type: none;
+}
+
+.logo {
+    padding: 8px 16px;
+}
+
+.logo img {
+    width: 38.35px;
+    height: 36px;
+}
+.logo:hover {
+    background-color: #ffff;
+    transition: all 0.25s ease;
+}
+.links__items {
+    display: inline-block;
+    padding: 16px;
+}
+.links__items:hover {
+    background-color: var(--green);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.header__right{
+    display: flex;
+    padding: 8px;
+}
+.button{
+    display: block;
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: auto;
+}
+.header__right__advertiser {
+    display: flex;
+    margin-right: 10px;
+}
+.advertisement {
+    background-color: transparent;
+}
+.advertisement:hover {
+    cursor: pointer;
+    background-color: #424c54;
+    transition: all 0.1s ease;
+}
+.header__right__icons {
+    padding-right: 3px;
+}
+
+.signup{
+    width: 93px;
+    background-color: var(--green);
+    font-weight: 400;
+    z-index: 5;
+}
+.login{
+    padding-left: 39px;
+    width: 112px;
+    background-color: var(--light-green);
+    color: black;
+    z-index: 4;
+}
+
+.box-left {
+    z-index: 5;
+    width: calc(93px - 39px);
+}
+.signup:hover{
+    transition: all 0.1s ease;
+    background-color: #059862;
+}
+.box-right {
+    z-index: 4;
+}
+.login:hover{
+    transition: all 0.1s ease;
+    background-color: #059862;
+    color: white;
+}
+
+
+
