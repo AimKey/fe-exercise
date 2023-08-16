@@ -18,60 +18,147 @@
   </head>
   <body>
     <!-- Ref: https://www.w3schools.com/ -->
-    <header class="header">
-      <div class="header__left">
-        <ul class="header__links">
-          <a class="logo" href="#">
-            <img src="./assets/images/W3Schools_logo.png" alt="W3S-logo" />
+    <div class="container">
+      <header class="header">
+        <div class="header__left">
+          <ul class="header__links">
+            <a class="logo" href="#">
+              <img src="./assets/images/W3Schools_logo.png" alt="W3S-logo" />
+            </a>
+
+            <a class="header__text" href="#">
+              Tutorials
+              <i class="fa-solid fa-caret-down fa-xs" style="color: #dddd"></i>
+            </a>
+
+            <a class="header__text" href="#">
+              Exercises
+              <i class="fa-solid fa-caret-down fa-xs" style="color: #dddd"></i>
+            </a>
+            <a class="header__text" href="#">
+              Get Certified
+              <i class="fa-solid fa-caret-down fa-xs" style="color: #dddd"></i>
+            </a>
+
+            <a class="header__text" href="#">
+              Services
+              <i class="fa-solid fa-caret-down fa-xs" style="color: #dddd"></i>
+            </a>
+          </ul>
+        </div>
+        <div class="header__right">
+          <div class="header__right__advertiser">
+            <button class="button advertisement header__text">
+              <i
+                class="fa-solid fa-wand-sparkles header__right__icons"
+                style="color: #9763f6"
+              ></i>
+              Bootcamps
+            </button>
+            <button class="button advertisement header__text">
+              <i
+                class="fa-solid fa-gift header__right__icons"
+                style="color: #04aa6d"
+              ></i>
+              Spaces
+            </button>
+          </div>
+
+          <div class="box-left">
+            <button class="button signup header__text">Sign Up</button>
+          </div>
+          <div class="box-right">
+            <button class="button login header__text">Log in</button>
+          </div>
+        </div>
+      </header>
+      <nav class="navbar">
+        <div class="navbar__main">
+          <ul class="navlist">
+            <li class="navlist__items html">
+              <a class="header__text" href="#">HTML</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">CSS</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">JAVASCRIPT</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">SQL</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">PYTHON</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">JAVA</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">PHP</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">BOOTSTRAP</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">HOW TO</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">W3.CSS</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">C</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">C++</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">C#</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">REACT</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">R</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">JQUERY</a>
+            </li>
+            <li class="navlist__items">
+              <a class="header__text" href="#">DJANGO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__secondary">
+          <a class="icon-misc"href="#">
+            <i class="fa-solid fa-circle-half-stroke"></i>
           </a>
-          <li class="links__items">
-            <a class="header__text" href="#">Tutorials</a>
-            <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff"></i>
-          </li>
-          <li class="links__items">
-            <a class="header__text" href="#">Exercises</a>
-            <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff"></i>
-          </li>
-          <li class="links__items">
-            <a class="header__text" href="#">Get Certified</a>
-            <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff"></i>
-          </li>
-          <li class="links__items">
-            <a class="header__text" href="#">Services</a>
-            <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff"></i>
-          </li>
-        </ul>
-      </div>
-      <div class="header__right">
-        <div class="header__right__advertiser">
-          <button class="button advertisement header__text">
-            <i
-              class="fa-solid fa-wand-sparkles header__right__icons"
-              style="color: #9763f6"
-            ></i>
-            Bootcamps
-          </button>
-          <button class="button advertisement header__text">
-            <i
-              class="fa-solid fa-gift header__right__icons"
-              style="color: #04aa6d"
-            ></i>
-            Spaces
+          <a class="icon-misc"href="#">
+            <i class="fa-solid fa-earth-asia"></i>
+          </a>
+          <a class="icon-misc"href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="navbar__reserve"></div>
+
+    <div class="center">
+      <div class="center__content">
+        <p>Learn to Code</p>
+        <h3>With the world's largest web developer site.</h3>
+        <br>
+        <div class="center__searchbar">
+          <input type="text" placeholder="Search our tutorials, e.g. HTML">
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-
-        <div class="box-left">
-          <button class="button signup header__text">Sign Up</button>
+        <div class="center__link"> 
+          <a href="#">Not Sure Where To Begin?</a>
         </div>
-        <div class="box-right">
-          <button class="button login header__text">Log in</button>
-        </div>
-
       </div>
-    </header>
-    <nav class="navbar">
-      <div class="navbar__main"></div>
-      <div class="navbar__secondary"></div>
-    </nav>
+    </div>
   </body>
 </html>
