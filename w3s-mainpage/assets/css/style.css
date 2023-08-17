@@ -22,7 +22,9 @@ br {
     --cyan: #96d4d4;
     --light-green: #d9eee1;
 }
-
+.menu {
+    display: none;
+}
 .header-container {
     width: 100%;
     position: fixed;
@@ -198,6 +200,7 @@ a {
 }
 
 .navbar__reserve {
+    background-color: var(--blue-black);
     width: 100%;
     height: 88px;
 }
@@ -327,7 +330,7 @@ a {
 .course__main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 3%;
     width: 49.99999999%;
@@ -405,7 +408,6 @@ a {
 .course__example {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 3%;
     width: 49.99999%;
@@ -437,6 +439,152 @@ a {
 .css {
     background-color: var(--yellow);
 }
+
+@media screen and (max-width: 1508px) {
+    .n17 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1416px) {
+    .n16 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1324px) {
+    .n15 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1290px) {
+    .n14 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1206px) {
+    .n13 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1062px) {
+    .n12 {
+        display: none;
+    }
+    .n11 {
+        display: none;
+    }
+}
+@media screen and (max-width: 974px) {
+    .n10 {
+        display: none;
+    }
+    .n9 {
+        display: none;
+    }
+    .bc {
+        display: none;
+    }
+}
+@media screen and (max-width: 802px) {
+    .n8 {
+        display: none;
+    }
+    .n7 {
+        display: none;
+    }
+    .sp {
+        display: none;
+    }
+}
+@media screen and (max-width: 710px) {
+    .h4 {
+        display: none;
+    }
+}
+@media screen and (max-width: 616px) {
+    .h3 {
+        display: none;
+    }
+    .n6 {
+        display: none;
+    }
+    .n5 {
+        display: none;
+    }
+    .center__content p {
+        font-size: 60px;
+    }
+}
+/* Ti lam tiep */
+/* PC */
+/* Smaller PC */
+@media screen and (max-width: 1366px) {
+    
+}
+/* Ipad */
+@media screen and (max-width: 768px) {
+    #wave {
+        display: none;
+    }
+    .special {
+        padding: 32px;
+    }
+    .course__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course__main {
+        width: 60%;
+    }
+    .course__example {
+        width: 70%;
+    }
+}
+/* Iphone */
+@media screen and (max-width: 390px) {
+    .n4 {
+        display: none;
+    }
+    .h1 {
+        display: none;
+    }
+    .h2 {
+        display: none;
+    }
+    .html-begin {
+        padding: 8px 16px;
+    }
+    .menu {
+        display: block;
+    }
+    .center__content {
+        padding: 0 35px;
+    }
+    .center__content p {
+        font-size: 50px;
+    }
+    .center__content h3 {
+        font-size: 21px;
+    }
+    .center__searchbar input {
+        font-size: 16px;
+        padding: 10px 10px 10px 16px;
+    }
+    .center__link {
+        font-size: 23px;
+    }
+    .course__example {
+        display: none;
+    }
+    .course__title {
+        font-size: 60px;
+    }
+    .course__main {
+        width: 100%;
+        padding-bottom: calc(32px + 3%);
+    }
+}
+
+
 
 
 
