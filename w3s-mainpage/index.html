@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Ref: https://www.w3schools.com/ -->
-    <div class="container">
+    <div class="header-container">
       <header class="header">
         <div class="header__left">
           <ul class="header__links">
@@ -75,7 +75,7 @@
       <nav class="navbar">
         <div class="navbar__main">
           <ul class="navlist">
-            <li class="navlist__items html">
+            <li class="navlist__items html-begin">
               <a class="header__text" href="#">HTML</a>
             </li>
             <li class="navlist__items">
@@ -129,13 +129,13 @@
           </ul>
         </div>
         <div class="navbar__secondary">
-          <a class="icon-misc"href="#">
+          <a class="icon-misc" href="#">
             <i class="fa-solid fa-circle-half-stroke"></i>
           </a>
-          <a class="icon-misc"href="#">
+          <a class="icon-misc" href="#">
             <i class="fa-solid fa-earth-asia"></i>
           </a>
-          <a class="icon-misc"href="#">
+          <a class="icon-misc" href="#">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
         </div>
@@ -148,15 +148,81 @@
       <div class="center__content">
         <p>Learn to Code</p>
         <h3>With the world's largest web developer site.</h3>
-        <br>
-        <div class="center__searchbar">
-          <input type="text" placeholder="Search our tutorials, e.g. HTML">
+        <br />
+        <form class="center__searchbar">
+          <input type="text" placeholder="Search our tutorials, e.g. HTML" />
           <button>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-        </div>
-        <div class="center__link"> 
+        </form>
+        <div class="center__link">
           <a href="#">Not Sure Where To Begin?</a>
+        </div>
+      </div>
+    </div>
+
+    <svg
+      id="wave"
+      style="transform: rotate(180deg); transition: 0.3s"
+      viewBox="0 0 1440 230"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="#0d1721"
+        d="M0,115L120,126.5C240,138,480,161,720,141.8C960,123,1200,61,1440,53.7C1680,46,1920,92,2160,92C2400,92,2640,46,2880,57.5C3120,69,3360,138,3600,138C3840,138,4080,69,4320,53.7C4560,38,4800,77,5040,99.7C5280,123,5520,130,5760,130.3C6000,130,6240,123,6480,122.7C6720,123,6960,130,7200,141.8C7440,153,7680,169,7920,172.5C8160,176,8400,169,8640,141.8C8880,115,9120,69,9360,65.2C9600,61,9840,100,10080,95.8C10320,92,10560,46,10800,57.5C11040,69,11280,138,11520,172.5C11760,207,12000,207,12240,176.3C12480,146,12720,84,12960,49.8C13200,15,13440,8,13680,19.2C13920,31,14160,61,14400,72.8C14640,84,14880,77,15120,61.3C15360,46,15600,23,15840,11.5C16080,0,16320,0,16560,11.5C16800,23,17040,46,17160,57.5L17280,69L17280,230L17160,230C17040,230,16800,230,16560,230C16320,230,16080,230,15840,230C15600,230,15360,230,15120,230C14880,230,14640,230,14400,230C14160,230,13920,230,13680,230C13440,230,13200,230,12960,230C12720,230,12480,230,12240,230C12000,230,11760,230,11520,230C11280,230,11040,230,10800,230C10560,230,10320,230,10080,230C9840,230,9600,230,9360,230C9120,230,8880,230,8640,230C8400,230,8160,230,7920,230C7680,230,7440,230,7200,230C6960,230,6720,230,6480,230C6240,230,6000,230,5760,230C5520,230,5280,230,5040,230C4800,230,4560,230,4320,230C4080,230,3840,230,3600,230C3360,230,3120,230,2880,230C2640,230,2400,230,2160,230C1920,230,1680,230,1440,230C1200,230,960,230,720,230C480,230,240,230,120,230L0,230Z"
+      ></path>
+    </svg>
+
+    <div class="course special html">
+      <div class="course__container">
+        <div class="course__main">
+          <h1 class="course__title">HTML</h1>
+          <span class="course__desc">The language for building web pages</span>
+          <div class="course__buttons">
+            <button class="learn course__button"><a href="#">Learn HTML</a></button>
+            <button class="video course__button"><a href="#">Video Tutorial</a></button>
+            <button class="ref course__button"><a href="#">HTML Reference</a></button>
+            <button class="cert course__button"><a href="#">Get Certified</a></button>
+          </div>
+        </div>
+        <div class="course__example">
+          <div class="example__content">
+            <h3 class="example__title">HTML Example:</h3>
+            <div class="code-html"></div>
+            <button class="learn course__button">
+              <a href="#">Try it Yourself</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course css">
+      <div class="course__container">
+        <div class="course__main">
+          <h1 class="course__title">CSS</h1>
+          <span class="course__desc">The language for building web pages</span>
+          <div class="course__buttons">
+            <button class="learn course__button"><a href="#">Learn CSS</a></button>
+            <!-- <button class="video course__button"><a href="#">Video Tutorial</a></button> -->
+            <button class="ref course__button"><a href="#">CSS Reference</a></button>
+            <button class="cert course__button"><a href="#">Get Certified</a></button>
+          </div>
+        </div>
+        <div class="course__example">
+          <div class="example__content">
+            <h3 class="example__title">CSS Example:</h3>
+            <div class="code-html"></div>
+            <button class="learn course__button">
+              <a href="#">Try it Yourself</a></button>
+          </div>
         </div>
       </div>
     </div>
