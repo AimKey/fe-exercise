@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
- }
+}
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -275,12 +275,11 @@ a {
     color: #1c1e21;
 }
 
-.footer {
-    /* cho de thay */
+/* .footer {
     padding-top: 20px;
     padding-bottom: 100px;
     background-color: white;
-}
+} */
 
 .bottom_text li:hover {
     text-decoration: underline;

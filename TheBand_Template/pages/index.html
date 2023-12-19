@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Band yay</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ba8c3661b4.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="pad"></div>
+    <header class="header">
+      <navbar class="navbar">
+        <ul class="navbar__left">
+          <li class="navbar__items button__black"><a href="#home">HOME</a></li>
+          <li class="navbar__items button__black"><a href="#band">BAND</a></li>
+          <li class="navbar__items button__black"><a href="#tour">TOUR</a></li>
+          <li class="navbar__items button__black"
+            ><a href="#contact">CONTACT</a></li
+          >
+          <li class="navbar__items button__black navbar__dropdown"
+            ><a class="dropdown__button"
+              >MORE
+              <i class="fa-solid fa-caret-down" style="margin-left: 2px"></i>
+            </a>
+            <div class="dropdown__list">
+              <a class="dropdown__item" href="">Item 1</a>
+              <a class="dropdown__item" href=""
+                >This may be something that is very
+                longkajwdlkawjdklawdjalwkdjlkawj</a
+              >
+              <a class="dropdown__item" href="">Merchandise</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar__right">
+          <li class="navbar__items button__black">
+            <a><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <div class="hamburger__container" onclick="hamburgerButton(this)"">
+            <div class="navbar__hamburger">
+              <div class="hamburger"></div>
+            </div>
+          </div>
+        </ul>
+      </navbar>
+      <div class="hamburger__menu hide">
+        <ul class="hamburger__menu__list">
+          <li class="navbar__items button__black"><a href="">Item 123</a></li>
+          <li class="navbar__items button__black"><a href="">Item 2</a></li>
+          <li class="navbar__items button__black"><a href="">Item 3</a></li>
+          <li class="navbar__items button__black"><a href="">Item 4</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="carousel" id="home">
+        <div class="carousel__imgs hide"
+          ><img src="../assets/images/MountFuji.jpg" alt="images"/>
+        <div class="carousel__desc">
+          <h2>Tokyo</h2>
+          <p>I Love Anime</p>
+        </div>
+      </div>
+        
+        <div class="carousel__imgs hide"
+          ><img src="../assets/images/NightDistrict.jpg" alt="images"/>
+        <div class="carousel__desc">
+          <h2>A night district in Tokyo</h2>
+          <p>Asthetic right?</p>
+        </div>
+      </div>
+        
+        <div class="carousel__imgs hide"
+          ><img src="../assets/images/JapanShop.jpg" alt="images"/>
+        <div class="carousel__desc">
+          <h2>Japan Shop</h2>
+          <p>A random japan shop</p>
+        </div>
+      </div>
+        
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="band-desc section content" id="band">
+        <div class="band-desc__introduction">
+          <h1 class="band-desc__title title-text">THE BAND</h1>
+          <span class="band-desc__sub-title sub-title">We love music</span>
+          <p class="band-desc__content"
+            >We created something hurray Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Neque ratione nesciunt, repellat nam doloremque
+            assumenda soluta eligendi harum optio dignissimos eum explicabo
+            saepe perferendis veniam exercitationem ut voluptatum sequi quo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            iusto, voluptas corporis tempora hic, recusandae dolorem quasi
+            inventore delectus ad iste earum perspiciatis neque et fuga nihil
+            dolores obcaecati corrupti?</p
+          >
+        </div>
+        <ul class="band-desc__members">
+          <li class="band-desc__member">
+            <p class="member__name">Member 1</p>
+            <div class="member__image">
+              <img src="../assets/images/08.png" alt="" />
+            </div>
+          </li>
+          <li class="band-desc__member">
+            <p class="member__name">Member 2</p>
+            <div class="member__image">
+              <img src="../assets/images/08.png" alt="" />
+            </div>
+          </li>
+          <li class="band-desc__member">
+            <p class="member__name">Member 3</p>
+            <div class="member__image">
+              <img src="../assets/images/08.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="booking section" id="tour">
+        <div class="content">
+          <h1 class="booking__title title-text">Tour dates</h1>
+          <h3 class="booking__sub-title sub-title"
+            >Remember to book your tickets</h3
+          >
+          <div class="booking__timeline">
+            <ul class="dates">
+              <li class="date">
+                <div class="date__left">
+                  <span class="date__month">September</span>
+                  <span class="date__status">Sold out</span>
+                </div>
+                <!-- <div class="date__tour-number">3</div> -->
+              </li>
+              <li class="date">
+                <div class="date__left">
+                  <span class="date__month">October</span>
+                  <span class="date__status">Sold out</span>
+                </div>
+                <!-- <div class="date__tour-number">3</div> -->
+              </li>
+              <li class="date">
+                <div class="date__left">
+                  <span class="date__month">December</span>
+                  <span class="date__status">Sold out</span>
+                </div>
+                <div class="date__tour-number">3</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="booking__tour">
+            <ul class="cards">
+              <li class="card">
+                <img
+                  src="../assets/images/ghibli2.jpg"
+                  alt=""
+                  class="card__img" />
+                <div class="card__content">
+                  <p class="card__title">New York</p>
+                  <p class="card__date"> Fri 27 Nov 2016 </p>
+                  <p class="card__desc"
+                    >Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <div class="card__button button__black"
+                    ><a href="">Buy Tickets</a></div
+                  >
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="../assets/images/ghibli2.jpg"
+                  alt=""
+                  class="card__img" />
+                <div class="card__content">
+                  <p class="card__title">New York</p>
+                  <p class="card__date"> Fri 27 Nov 2016 </p>
+                  <p class="card__desc"
+                    >Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <div class="card__button button__black"
+                    ><a href="">Buy Tickets</a></div
+                  >
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  src="../assets/images/ghibli2.jpg"
+                  alt=""
+                  class="card__img" />
+                <div class="card__content">
+                  <p class="card__title">New York</p>
+                  <p class="card__date"> Fri 27 Nov 2016 </p>
+                  <p class="card__desc"
+                    >Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <div class="card__button button__black"
+                    ><a href="">Buy Tickets</a></div
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="section content" id="contact">
+        <h1 class="contact__title title-text">Contact</h1>
+        <p class="contact__sub-title sub-title">Fan? Drop a note!</p>
+        <div class="contact__content">
+          <div class="contact__left">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Chicago, US</p>
+              </li>
+              <li class="contact__item">
+                <i class="fa-solid fa-phone"></i>
+                <p>Phone: +00 151515</p>
+              </li>
+              <li class="contact__item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email: mail@mail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__right">
+            <form action="">
+              
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <img class="footer__img" src="../assets/images/tokyo.jpg" alt="" />
+
+    <footer class="section" id="footer">
+      <div class="footer__icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+      <span>Powered by <a class="footer__link" href="">w3.css</a></span>
+    </footer>
+    <script src="../assets/scripts/scripts.js"></script>
+  </body>
+</html>
